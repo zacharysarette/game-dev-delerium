@@ -1,5 +1,10 @@
 ﻿# The script of the game goes in this file.
 
+#Set the volume to not explode
+$ renpy.music.set_volume(0.2, channel='music')
+$ renpy.music.set_volume(0.2, channel='sfx')
+$ renpy.music.set_volume(0.2, channel='voice')
+
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 define e = Character("Ellie")
@@ -43,7 +48,7 @@ label start:
 
     scene office morning
 
-    play sound "sounds/greatestgame.ogg"
+    # play sound "sounds/greatestgame.ogg"
 
     "Congratulations! You are now a game developer!"
 
